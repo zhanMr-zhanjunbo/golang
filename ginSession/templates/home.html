@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>信息与网络中心</title>
+    <style type="text/css">
+        <!--
+        /*整体样式设计*/
+        body{ margin:0; padding:0;font:12px/1.6 Arial;}
+        ul{ margin:0; padding:0; list-style-type:none;}
+        a{ color:#999900; text-decoration:none;}
+        p{ text-indent:2em;}
+        /*页头部分*/
+        #header{
+            background:url(../static/images/b1.jpg) no-repeat;
+            width:768px;
+            height:191px;
+            margin:0 auto;
+            position:relative;}
+        h1{margin:0;}
+        #header #logo{position:absolute;top:10px;left:85px;}
+        #header #topnav{position:absolute;top:10px;right:40px;}
+        #header #topnav li{ float:left;padding:4px 10px 2px; margin:0 4px;}
+        /*内容部分*/
+        #content{width:760px;margin:0 auto; padding:5px;}
+        #maincontent{float:left;width:540px;}
+        #sidebar{float:right;width:207px;}
+        /*页脚部分*/
+        #footer{
+            clear:both;
+            width:768px;
+            height:58px;
+            margin:0 auto;
+            text-indent:0;
+            text-align:center;
+            background:#ddf0f9 url(../static/images/b2.jpg) repeat-x;}
+        /*视觉设计--页头部分*/
+        #header h1{
+            background:url(../static/images/bg.jpg) no-repeat;
+            height:46px;
+            width:322px;
+            position:absolute;
+            top:20px;
+            left:160px;}
+        #header h1 span{display:none;}
+        #header #nav{position:absolute;top:140px;left:50px;height:27px;}
+        #header #nav li{float:left;}
+        #header #nav li a{
+            background:url(../static/images/bg.jpg) no-repeat;
+            display:block;
+            line-height:27px;
+            padding:0 0 0 14px;
+            margin-left:10px;
+            text-align:center;}
+        #header #nav li a span{
+            background:url(../static/images/bg.jpg) no-repeat right top;
+            padding:0 14px 0 0;
+            display:block;}
+        #header #nav .current a{background-position:0 -27px;}
+        #header #nav .current a span{background-position:100% -27px;}
+        #header #nav .icon1 a{ background:url(images/menu_guide.png) no-repeat;width:64px;height:59px;position:absolute;top:-8px; right:-334px;}
+        #header #nav .icon1 a span{ display:none;}
+        #header #nav .icon2 a{ background:url(images/menu_support.png) no-repeat;width:68px;height:59px;position:absolute;top:-8px;
+            right:-398px;}
+        #header #nav .icon1 a span,#header #nav .icon2 a span{ display:none;}
+        /*视觉设计--左侧主要内容列*/
+        #content a img{ padding:5px; background-color:#FFFFFF; border:1px #deaf50 solid;}
+        .imgLeft{float:left; margin-right:12px;}
+        .imgRight{float:right; margin-left:12px;}
+        .multiColumn li{ float:left; width:160px; text-align:center; margin:0 10px; display:inline;}
+        .recom{clear:both;}
+        .recom h2{ background:transparent url(images/rose.png) no-repeat left bottom;
+            padding:20px 0 1px 26px;
+            color:#069;
+            font:bold 22px/24px "楷体_gb2312";
+            border-bottom:1px solid #deaf50;}
+        .multiColumn li p{text-align:left;margin:0 0 10px 0;}
+        .side{background:transparent url(images/bottombox.png) no-repeat bottom;margin-top:20px;}
+        .side div{background:transparent url(images/topbox.png) no-repeat;padding:10px;}
+        .side h2{color:#069;font:bold 22px/24px "楷体_gb2312";text-align:center;margin:0;}
+        .search{text-align:center;}
+        .side form{margin:5px 0;}
+        .side input{border:1px solid #069;background-color:#fee;margin:5px 0;}
+        .downbox li{border-top:1px solid #fff;font:14px "宋体";}
+        .extxa h2{border-bottom:1px solid #fff;}
+        .downbox li a{
+            padding-left:35px;
+            height:25px;
+            line-height:25px;
+            background:transparent url(images/bullet.gif) no-repeat 10px center;
+            color:#000;
+            display:block;}
+        .downbox li a:hover{background:#fee url(images/bullet2.gif) no-repeat 10px center; color:#c63;}
+        #content a:hover img{background-color:#3d81b4;border:1px solid #3d81b4;}
+        #content a:hover{color:#c63;}  /*解决IE6 bug*/
+        -->
+    </style>
+</head>
+
+<body>
+<div id="header">
+    <h1><span>信息与网络中心</span></h1>
+    <div id="logo"><img src="images/logo.png" alt="信息与网络中心"/></div>
+    <ul id="nav">
+        <li class="current"><a href="#"><span>首页</span></a></li>
+        <li><a href="#"><span>中心简介</span></a></li>
+        <li><a href="#"><span>网络建设</span></a></li>
+        <li><a href="#"><span>政策法规</span></a></li>
+        <li class="icon1"><a href="#"><span>建站指南</span></a></li>
+        <li class="icon2"><a href="#"><span>技术支持</span></a></li>
+    </ul>
+    <ul id="topnav">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系方式</a></li>
+        <li><a href="#">意见建议</a></li>
+    </ul>
+</div>
+
+<div id="content">
+    <div id="maincontent">
+        <div class="recom">
+            <h2>最新动态</h2>
+            <div class="imgLeft">
+                <a href="#"><img src="images/pix1.jpg"/></a>
+            </div>
+            <p>校园网将全面启用IEEE 802.1x实名上网认证系统，该系统采用radius服务器，实现在交换机端口就能进行认证。请大家在本站下载客户端，并领取认证帐号。</p>
+        </div>
+
+        <div class="recom">
+            <h2>中心简介</h2>
+            <div class="imgRight">
+                <a href="#"><img src="images/pix2.jpg" width="121" height="63" /></a>
+            </div>
+            <p>信息与网络管理中心是主要担负全院的校园网络规划、建设、监控及管理；网络应用开发和研究；远程教学应用及研究；部分计算机课程教学等工作。</p>
+        </div>
+
+        <div class="recom multiColumn">
+            <h2>网站建设</h2>
+            <ul>
+                <li><a href="#"><img src="images/wz1.jpg" width="121" height="63" /></a>
+                    <p>教务处网站。教务处是负责学校教育教学管理的职能部门。</p></li>
+                <li><a href="#"><img src="images/wz2.jpg" width="121" height="63" /></a>
+                    <p>科技处网站。负责对全校科学研究和科技开发工作行使校级组织管理的职能机构</p></li>
+                <li><a href="#"><img src="images/wz3.jpg" width="121" height="63" /></a>
+                    <p>人事处网站。人事处是负责全校人事、编制、劳资、师资、职称等工作的职能部门</p></li>
+            </ul>
+        </div>
+    </div>  <!--maincontent end-->
+
+    <div id="sidebar">
+        <div class="side search">
+            <div>
+                <form action="" method="get"><input type="text" size="20" />
+                    <input type="submit" name="Submit" value="站内搜索" />
+                </form>
+            </div>
+        </div>
+        <div class="side downbox">
+            <div>
+                <h2>常用下载</h2>
+                <ul>
+                    <li><a href="#">上网申请表</a></li>
+                    <li><a href="#">办公系统</a></li>
+                    <li><a href="#">杀毒软件</a></li>
+                    <li><a href="#">认证客户端</a></li>
+                    <li><a href="#">ARP防火墙</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="side extxa">
+            <div>
+                <h2>特别提示</h2>
+                <p>请使用了认证软件上网的用户保管好帐户密码</p>
+            </div>
+        </div>
+    </div>  <!--sidebar end-->
+</div>
+
+<div id="footer">
+    <p><a href="#">网站首页</a> | <a href="#">邮箱登录</a> | <a href="#">加入收藏</a> | <a href="#">留言薄</a></p>
+    <p>版权所有 &copy;  2009 信息与网络中心 Email：tangsix@163.com</p>
+</div>
+</body>
+</html>
