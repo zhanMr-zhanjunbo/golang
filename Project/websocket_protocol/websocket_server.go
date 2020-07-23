@@ -7,7 +7,6 @@ import (
 	"net/http"
 	"html/template"
 	"log"
-	"time"
 )
 
 var (
@@ -35,16 +34,16 @@ func GetWebSocket(w http.ResponseWriter, r *http.Request) {
 	if conn, err = impl.InitCreateConnection(wsConn); err != nil {
 		goto ERR
 	}
-	go func() {
-		for {
-			var err error
-			if err = conn.WriteMessage([]byte("heartbeat\n")); err != nil {
-				return
-			}
-			time.Sleep(2 * time.Second)
-		}
-
-	}()
+	//go func() {
+	//	for {
+	//		var err error
+	//		if err = conn.WriteMessage([]byte("heartbeat\n")); err != nil {
+	//			return
+	//		}
+	//		time.Sleep(time.Second)
+	//	}
+	//
+	//}()
 	for {
 		if buf, err = conn.ReadMessage(); err != nil {
 			goto ERR

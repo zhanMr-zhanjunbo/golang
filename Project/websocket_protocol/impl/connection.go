@@ -9,10 +9,11 @@ import (
 )
 
 var (
-	wsUsers map[*websocket.Conn]string=make(map[*websocket.Conn]string,1024)
+	wsUsers map[*websocket.Conn]string=make(map[*websocket.Conn]string)
 )
 type Connection struct {
 	wsConn       *websocket.Conn
+	//wsUsers      map[*websocket.Conn]string
 	outChannel   chan []byte
 	inChannel    chan []byte
 	closeChannel chan []byte
@@ -23,6 +24,7 @@ type Connection struct {
 func InitCreateConnection(wsConn *websocket.Conn) (conn *Connection, err error) {
 	conn = &Connection{
 		wsConn:       wsConn,
+		//wsUsers:      make(map[*websocket.Conn]string,1024),
 		outChannel:   make(chan []byte, 1024),
 		inChannel:    make(chan []byte, 1024),
 		closeChannel: make(chan []byte, 1),
@@ -86,8 +88,8 @@ func (conn *Connection)ParseData(data []byte) {
 		fmt.Println("parse data failed",err.Error())
 		return
 	}
-	if _,ok:=wsUsers[conn.wsConn];!ok{
-		wsUsers[conn.wsConn]=tidings.Name
+	if _,ok:=wsUsers[conn.wsConn];ok{
+		wsUsers[conn.wsConn]+=tidings.Name
 		dataNews.Users=append(dataNews.Users,User{Name:tidings.Name})
 	}
 	dataNews.News=append(dataNews.News,tidings)

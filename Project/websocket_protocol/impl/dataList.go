@@ -5,8 +5,8 @@ type User struct {
 }
 
 type Tidings struct {
-	Name string
-	Information string
+	Name string         `json:"username"`
+	Information string  `json:"message"`
 }
 
 type DataSet struct {
